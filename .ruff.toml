@@ -1,0 +1,58 @@
+# configuration for ruff: https://docs.astral.sh/ruff/configuration/
+
+target-version = "py312"
+indent-width = 2
+line-length = 120
+exclude = [
+  "__pycache__",
+  ".mypy_cache",
+  ".ruff_cache",
+  ".venv",
+  "*.egg-info",
+  "build",
+  "dist",
+  "out",
+  "*log*",
+]
+
+# rules for lint: https://docs.astral.sh/ruff/rules/
+[lint]
+select = ["ALL"]
+fixable = ["ALL"]
+ignore = [
+  "T201",
+  "TRY002",
+  "TRY003",
+  "COM812",
+  "COM819",
+  "D100",
+  "D202",
+  "D203",
+  "D213",
+  "D300",
+  "E111",
+  "E114",
+  "E117",
+  "E501",
+  "ERA001",
+  "EM101",
+  "ISC001",
+  "ISC002",
+  "Q000",
+  "Q001",
+  "Q002",
+  "Q003",
+  "W191",
+  "ANN001",
+]
+
+[lint.extend-per-file-ignores]
+"__init__.py" = ["D1", "F403"]
+"__main__.py" = ["D1"]
+
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

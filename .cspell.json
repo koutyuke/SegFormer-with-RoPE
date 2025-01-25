@@ -1,0 +1,31 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [
+    "typescript",
+    "python",
+    "node",
+    "html",
+    "css",
+    "scss",
+    "json",
+    "yaml",
+    "markdown"
+  ],
+  "ignorePaths": [
+    "node_modules/",
+    "dist/",
+    "build/",
+    "coverage/",
+    "out/",
+    "public/",
+    "tmp/",
+    "temp/",
+    ".*"
+  ],
+  "words": [
+    "freqs",
+    "icecream",
+    "Segformer"
+  ]
+}
