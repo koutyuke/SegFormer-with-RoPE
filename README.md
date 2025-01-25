@@ -29,7 +29,7 @@ Details of Transformer Block
               |     +--------+    ↑
               + ←-- |  RoPE  |    |
               |     +--------+    |
-              ↓                   | RoPE Efficient Self-Attention
+              ↓                   |  RoPE Efficient Self-Attention
       +-----------------+         |
       |  Efficient MSA  |         |
       +-----------------+         ↓
@@ -102,8 +102,8 @@ We used [ADE20K(SceneParse150)](https://huggingface.co/datasets/zhoubolei/scene_
 | Model Name           | Size | mIoU      |
 | -------------------- | ---- | --------- |
 | SegFormer            | b0   | 21.83     |
-| SegFOrmer+RoPE-Axial | b0   | 23.82     |
-| SegFOrmer+RoPE-Mixed | b0   | **24.11** |
+| SegFormer+RoPE-Axial | b0   | 23.82     |
+| SegFormer+RoPE-Mixed | b0   | **24.11** |
 
 ## License
 
